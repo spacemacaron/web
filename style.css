@@ -1,0 +1,61 @@
+
+body{
+  margin: 0;
+}
+a {
+color: #ffcfc5;
+text-decoration: none;
+}
+h1{
+font-size: 50px;
+text-align: center;
+border-bottom:1px solid grey;
+margin: 0;
+padding: 30px;
+}
+/*ol 중에 gird가 부모인 ol, 조상이 #gird인 태그를 선택하는 선택자 */
+#grid ol{
+border-right: 1px solid grey;
+width:300px;
+margin: 0;
+padding: 20px;
+padding-left: 33px;
+}
+#grid{
+display: grid;
+grid-template-columns: 300px 1fr;
+}
+#grid #article{
+padding-left: 10%;
+padding-right: 25%;
+padding-top: 3%;
+}
+@media(max-width:800px){
+#grid{
+  display: block;
+}
+#grid ol{
+  border-right: none;
+}
+}
+
+/*<style>
+a {
+  color: #ffcfc5;
+  text-decoration: none;
+}
+.saw {
+  color:grey;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  border-bottom:1px solid grey;
+  margin: 0;
+  padding: 20px;
+}
+/*ol{
+  border-right: 1px solid grey;
+  width:150px;
+}*/
